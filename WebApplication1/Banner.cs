@@ -2,6 +2,7 @@
 {
     public class Banner
     {
+        //table-driven method
         public enum banner
         {
             PenggunaanWebsite,
@@ -11,7 +12,8 @@
 
         public void showBanner(banner x)
         {
-            String[] imageBanner = { "image1.jpg", "image2.jpg", "image3.jpg" };
+            //Menampilkan image sesuai dengan input parameter
+            String[] imageBanner = { "imagePenggunaanWebsite.jpg", "imagePerbaikanKTM.jpg", "imagePenggantianKTM.jpg" };
             Console.WriteLine(imageBanner[(int)x]);
         }
     }
