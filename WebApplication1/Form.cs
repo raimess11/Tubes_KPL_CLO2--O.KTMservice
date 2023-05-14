@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace DBServerAPI
 {
-    internal class Form
+    public class Form
     {
-        public List<KeyValuePair<string, object>> files;
+        public List<KeyValuePair<string, byte[]>> files;
     }
 }
