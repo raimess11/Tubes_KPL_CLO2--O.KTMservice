@@ -15,7 +15,7 @@ namespace DBServerAPI
     {
 
     }
-    internal class Request
+    public class Request
     {
         private SERVICE_TYPE serviceType;
         private Mahasiswa mahasiswa;

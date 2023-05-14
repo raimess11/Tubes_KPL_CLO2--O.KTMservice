@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DBServerAPI
 {
-    abstract internal class Account
+    abstract public class Account
     {
         protected string name;
         protected string password;

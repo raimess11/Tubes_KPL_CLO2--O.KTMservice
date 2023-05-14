@@ -7,10 +7,20 @@ using System.Threading.Tasks;
 
 namespace DBServerAPI
 {
-    internal class Mahasiswa : Account
+    public class Mahasiswa : Account
     {
         private int nim;
         //image KSM;
         //image KTM;
+        public Mahasiswa()
+        {
+
+        }
+        public Mahasiswa(string nama, string password, int nim)
+        {
+            this.name = nama;
+            this.password = password;
+            this.nim = nim;
+        }
     }
 }
