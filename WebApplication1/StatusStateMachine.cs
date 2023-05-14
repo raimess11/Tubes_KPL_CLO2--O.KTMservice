@@ -95,7 +95,18 @@
 
         public string getKondisi(State state)
         {
+            //mengembalikan kondisi berupa string sesuai paramater
             return kondisiKTM[(int)StatePengurusan];
+        }
+
+        public void gantiState(State state)
+        {
+            /*
+            mengganti state sesuai dengan input parameter.
+            Method ini hanya bisa dipakai oleh object request 
+            yang menyimpan progress terakhir pengurusan KTM nya
+            */
+            StatePengurusan = state;
         }
     }
 }
