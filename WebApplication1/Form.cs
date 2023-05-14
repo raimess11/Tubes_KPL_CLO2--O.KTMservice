@@ -8,7 +8,6 @@ using MenyantumkanDokumen;
 
 namespace DBServerAPI
 {
-
     public class Form
     {
         public Dictionary<string, CantumFoto.Foto> files { get; set; }
@@ -72,6 +71,5 @@ namespace DBServerAPI
                 }
             }
         }
-
     }
 }

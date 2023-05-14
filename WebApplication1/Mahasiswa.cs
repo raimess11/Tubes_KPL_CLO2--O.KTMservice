@@ -14,10 +14,9 @@ namespace DBServerAPI
         //image KTM;
 
         public Mahasiswa() { }
-
-        public Mahasiswa(string name, string password, int nim)
+        public Mahasiswa(string nama, string password, int nim)
         {
-            this.name = name;
+            this.name = nama;
             this.password = password;
             this.nim = nim;
         }

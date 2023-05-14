@@ -20,7 +20,7 @@ namespace DBServerAPI
         BisaAksesFasilitas,
         Selesai
     }
-
+    
     public class Request
     {
         public SERVICE_TYPE serviceType { get; set; }
