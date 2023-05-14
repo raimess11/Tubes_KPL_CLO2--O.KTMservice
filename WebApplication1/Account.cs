@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace DBServerAPI
 {
-    abstract internal class Account
+    abstract public class Account
     {
-        protected string name;
-        protected string password;
+        public string name { get; set; }
+        public string password { get; set; }
     }
 }
