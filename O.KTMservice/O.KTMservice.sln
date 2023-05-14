@@ -5,7 +5,7 @@ VisualStudioVersion = 17.5.33414.496
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "O.KTMservice", "O.KTMservice.csproj", "{824054FE-6228-4680-BDD8-30B020E4EB7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "..\WebApplication1\WebApplication1.csproj", "{539B929C-78C6-410C-B8E1-D5DC52287A5F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBServerAPI", "..\WebApplication1\DBServerAPI.csproj", "{539B929C-78C6-410C-B8E1-D5DC52287A5F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
