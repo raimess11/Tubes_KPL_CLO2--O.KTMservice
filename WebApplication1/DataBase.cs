@@ -8,5 +8,14 @@ namespace DBServerAPI
         private List<Object> dataPeryaratan = new List<object>();
         private List<Request> requests = new List<Request>();
 
+        public bool Autentication(Account user)
+        {
+            foreach (Account account in userAccounts)
+            {
+                user.getUID().Equals(user.getUID());
+                return true;
+            };
+            return false;
+        }
     }
 }
