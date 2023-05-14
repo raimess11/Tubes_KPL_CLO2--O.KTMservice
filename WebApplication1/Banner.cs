@@ -12,8 +12,9 @@
 
         public void showBanner(banner x)
         {
-            //Menampilkan image sesuai dengan input parameter
-            String[] imageBanner = { "imagePenggunaanWebsite.jpg", "imagePerbaikanKTM.jpg", "imagePenggantianKTM.jpg" };
+            //i.s. Terdapat parameter x sebagai indeks untuk enum banner
+            //f.s. Menampilkan imageBanner indeks yang sesuai dengan parameter
+            string[] imageBanner = { "imagePenggunaanWebsite.jpg", "imagePerbaikanKTM.jpg", "imagePenggantianKTM.jpg" };
             Console.WriteLine(imageBanner[(int)x]);
         }
     }
