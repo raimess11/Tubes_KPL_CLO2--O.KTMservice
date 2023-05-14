@@ -4,6 +4,28 @@ namespace MenyantumkanDokumen
 {
     public static class CantumFoto
     {
+        public static Foto holdFotoAPI(string path)
+        {
+            // Load file meta data with FileInfo
+            FileInfo fileInfo = new FileInfo(path);
+
+            // The byte[] to save the data in
+            byte[] data = new byte[fileInfo.Length];
+
+            // Load a filestream and put its content into the byte[]
+            using (FileStream fs = fileInfo.OpenRead())
+            {
+                fs.Read(data, 0, data.Length);
+            }
+
+            // Delete the temporary file \\Note: perlu buat temporary fileinfo
+            //fileInfo.Delete();
+
+            Foto e = new Foto();
+            e.imageByte = data;
+            return e;
+        }
+
         public static void serializeFoto(string path)
         {
 
@@ -18,8 +40,6 @@ namespace MenyantumkanDokumen
             {
                 fs.Read(data, 0, data.Length);
             }
-
-            Console.WriteLine(fileInfo.Length);
 
             // Delete the temporary file \\Note: perlu buat temporary fileinfo
             //fileInfo.Delete();
