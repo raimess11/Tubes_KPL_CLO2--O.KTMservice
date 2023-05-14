@@ -4,7 +4,7 @@ namespace DBServerAPI
 {
     public class Program
     {
-        public static void tempMain(string[] args)
+        public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
