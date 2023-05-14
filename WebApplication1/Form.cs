@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,14 +19,17 @@ namespace DBServerAPI
 
             Console.Write("Input KTM: ");
             path = Console.ReadLine();
+            Debug.Assert(!string.IsNullOrEmpty(path), "Image path cannot empty.");
             files["KTM"] = CantumFoto.holdFotoAPI(path);
 
             Console.Write("Input KSM: ");
             path = Console.ReadLine();
+            Debug.Assert(!string.IsNullOrEmpty(path), "Image path cannot empty.");
             files["KSM"] = CantumFoto.holdFotoAPI(path);
 
             Console.Write("Input Bukti Pembayaran: ");
             path = Console.ReadLine();
+            Debug.Assert(!string.IsNullOrEmpty(path), "Image path cannot empty.");
             files["BuktiPembayaran"] = CantumFoto.holdFotoAPI(path);
         }
 
@@ -35,14 +39,17 @@ namespace DBServerAPI
 
             Console.Write("Input KSM: ");
             path = Console.ReadLine();
+            Debug.Assert(!string.IsNullOrEmpty(path), "Image path cannot empty.");
             files["KSM"] = CantumFoto.holdFotoAPI(path);
 
             Console.Write("Input Surat kehilangan: ");
             path = Console.ReadLine();
+            Debug.Assert(!string.IsNullOrEmpty(path), "Image path cannot empty.");
             files["SuratKehilangan"] = CantumFoto.holdFotoAPI(path);
 
             Console.Write("Input Bukti Pembayaran: ");
             path = Console.ReadLine();
+            Debug.Assert(!string.IsNullOrEmpty(path), "Image path cannot empty.");
             files["BuktiPembayaran"] = CantumFoto.holdFotoAPI(path);
         }
 
