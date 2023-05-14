@@ -5,7 +5,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace O.KTMservice
+namespace DBServerAPI
 {
     internal class Mahasiswa : Account
     {

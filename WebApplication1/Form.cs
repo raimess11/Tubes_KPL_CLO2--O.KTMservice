@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace O.KTMservice
+namespace DBServerAPI
 {
-    internal class Staff : Account
+    internal class Form
     {
-        private int nip;
+        public List<KeyValuePair<string, object>> files;
     }
 }

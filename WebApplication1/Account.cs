@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace O.KTMservice
+namespace DBServerAPI
 {
-    internal class Form
+    abstract internal class Account
     {
-        public List<KeyValuePair<string, object>> files;
+        protected string name;
+        protected string password;
     }
 }

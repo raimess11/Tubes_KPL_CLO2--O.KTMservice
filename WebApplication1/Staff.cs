@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace O.KTMservice
+namespace DBServerAPI
 {
-    abstract internal class Account
+    internal class Staff : Account
     {
-        protected string name;
-        protected string password;
+        private int nip;
     }
 }
