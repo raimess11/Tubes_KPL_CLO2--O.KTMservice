@@ -1,9 +1,12 @@
-﻿namespace DBServerAPI
+﻿using System.Diagnostics.Eventing.Reader;
+
+namespace DBServerAPI
 {
     public class DataBase
     {
-        private List<KeyValuePair<string, string>> userAccounts;
-        private List<Object> dataPeryaratan;
-        private List<Request> requests;
+        private List<Account> userAccounts = new List<Account>() { (Account)new Staff("admin", "admin", 123), (Account)new Mahasiswa("rahma", "password", 1302210095) };
+        private List<Object> dataPeryaratan = new List<object>();
+        private List<Request> requests = new List<Request>();
+
     }
 }
