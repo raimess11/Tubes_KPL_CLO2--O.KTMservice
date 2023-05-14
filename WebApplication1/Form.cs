@@ -3,36 +3,47 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MenyantumkanDokumen;
 
 namespace DBServerAPI
 {
-    
-    public class Form<file>
+
+    public class Form
     {
-        public Dictionary<string, file> files { get; set; }
+        public Dictionary<string, CantumFoto.Foto> files { get; set; }
 
         private void showPerbaikanForm()
         {
+            string path;
+
             Console.Write("Input KTM: ");
-            files["KTM"] = (file)Convert.ChangeType(Console.ReadLine(), typeof(file));
+            path = Console.ReadLine();
+            files["KTM"] = CantumFoto.holdFotoAPI(path);
 
             Console.Write("Input KSM: ");
-            files["KSM"] = (file)Convert.ChangeType(Console.ReadLine(), typeof(file));
+            path = Console.ReadLine();
+            files["KSM"] = CantumFoto.holdFotoAPI(path);
 
             Console.Write("Input Bukti Pembayaran: ");
-            files["BuktiPembayaran"] = (file)Convert.ChangeType(Console.ReadLine(), typeof(file));
+            path = Console.ReadLine();
+            files["BuktiPembayaran"] = CantumFoto.holdFotoAPI(path);
         }
 
         private void showPenggantianForm()
         {
+            string path;
+
             Console.Write("Input KSM: ");
-            files["KSM"] = (file)Convert.ChangeType(Console.ReadLine(), typeof(file));
+            path = Console.ReadLine();
+            files["KSM"] = CantumFoto.holdFotoAPI(path);
 
             Console.Write("Input Surat kehilangan: ");
-            files["SuratKehilangan"] = (file)Convert.ChangeType(Console.ReadLine(), typeof(file));
+            path = Console.ReadLine();
+            files["SuratKehilangan"] = CantumFoto.holdFotoAPI(path);
 
             Console.Write("Input Bukti Pembayaran: ");
-            files["BuktiPembayaran"] = (file)Convert.ChangeType(Console.ReadLine(), typeof(file));
+            path = Console.ReadLine();
+            files["BuktiPembayaran"] = CantumFoto.holdFotoAPI(path);
         }
 
         public void showForm(string serviceType)
@@ -40,7 +51,7 @@ namespace DBServerAPI
             string input;
             SERVICE_TYPE service;
 
-            files = new Dictionary<string, file>();
+            files = new Dictionary<string, CantumFoto.Foto>();
 
             if (Enum.TryParse(serviceType, out service))
             {
@@ -54,5 +65,6 @@ namespace DBServerAPI
                 }
             }
         }
+
     }
 }
