@@ -6,17 +6,21 @@ using System.Threading.Tasks;
 
 namespace DBServerAPI
 {
-    abstract public class Account
+    public class Account
     {
-        static private int UIDgenerate = 0;
-        static private int UID;
-        protected string name;
-        protected string password;
-
-        protected Account()
+        static private int UIDgenerate {get; set;} = 0;
+        static private int UID { get; set; }
+        public string name {get; set;}
+        public string password { get; set; }
+        public Account()
         {
             UIDgenerate++;
             UID = UIDgenerate;
+        }
+        public Account(string name, string password)
+        {
+            this.name = name;
+            this.password = password;
         }
 
         public int getUID() { return UID; }

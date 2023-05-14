@@ -4,18 +4,28 @@ namespace DBServerAPI
 {
     public class DataBase
     {
-        private List<Account> userAccounts = new List<Account>() { (Account)new Staff("admin", "admin", 123), (Account)new Mahasiswa("rahma", "password", 1302210095) };
+        static private List<Account> userAccounts { get; set; } = new List<Account>() { (Account)new Staff("admin", "admin", 123), (Account)new Mahasiswa("rahma", "password", 1302210095) }; 
         private List<Object> dataPeryaratan = new List<object>();
         private List<Request> requests = new List<Request>();
 
-        public bool Autentication(Account user)
+        static public bool Autentication(Account user)
         {
-            foreach (Account account in userAccounts)
+            try
             {
-                user.getUID().Equals(user.getUID());
-                return true;
-            };
+                foreach (Account account in userAccounts)
+                {
+                    account.getUID().Equals(user.getUID());
+                    return true;
+                };
+            }
+            catch (NullReferenceException ex)
+            {
+                Console.WriteLine("anda dalam mode guest, silahkan melakukan login terlebih dahulu");
+                throw ex;
+            }
             return false;
         }
+
+        static public List<Account> getUserAccounts() {  return userAccounts; }
     }
 }
