@@ -1,43 +1,54 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MenyantumkanDokumen;
 
-namespace O.KTMservice
+namespace DBServerAPI
 {
-    internal class Form<file>
+    public enum SERVICE_TYPE
     {
-        private Dictionary<string, file> files = new Dictionary<string, file>();
-        private Dictionary<string, string> data = new Dictionary<string, string>();
-        public enum SERVICE_TYPE
-        {
-            PERBAIKAN_KTM,
-            PENGGANTIAN_KTM
-        }
+        PERBAIKAN_KTM,
+        PENGGANTIAN_KTM
+    }
+    public class Form
+    {
+        public Dictionary<string, CantumFoto.Foto> files { get; set; }
 
         private void showPerbaikanForm()
         {
+            string path;
+
             Console.Write("Input KTM: ");
-            files["KTM"] = (file)Convert.ChangeType(Console.ReadLine(), typeof(file));
+            path = Console.ReadLine();
+            files["KTM"] = CantumFoto.holdFotoAPI(path);
 
             Console.Write("Input KSM: ");
-            files["KSM"] = (file)Convert.ChangeType(Console.ReadLine(), typeof(file));
+            path = Console.ReadLine();
+            files["KSM"] = CantumFoto.holdFotoAPI(path);
 
             Console.Write("Input Bukti Pembayaran: ");
-            files["BuktiPembayaran"] = (file)Convert.ChangeType(Console.ReadLine(), typeof(file));
+            path = Console.ReadLine();
+            files["BuktiPembayaran"] = CantumFoto.holdFotoAPI(path);
         }
 
         private void showPenggantianForm()
         {
+            string path;
+
             Console.Write("Input KSM: ");
-            files["KSM"] = (file)Convert.ChangeType(Console.ReadLine(), typeof(file));
+            path = Console.ReadLine();
+            files["KSM"] = CantumFoto.holdFotoAPI(path);
 
             Console.Write("Input Surat kehilangan: ");
-            files["SuratKehilangan"] = (file)Convert.ChangeType(Console.ReadLine(), typeof(file));
+            path = Console.ReadLine();
+            files["SuratKehilangan"] = CantumFoto.holdFotoAPI(path);
 
             Console.Write("Input Bukti Pembayaran: ");
-            files["BuktiPembayaran"] = (file)Convert.ChangeType(Console.ReadLine(), typeof(file));
+            path = Console.ReadLine();
+            files["BuktiPembayaran"] = CantumFoto.holdFotoAPI(path);
         }
 
         public void showForm(string serviceType)
@@ -45,22 +56,20 @@ namespace O.KTMservice
             string input;
             SERVICE_TYPE service;
 
-            Console.Write("Nama Lengkap: ");
-            data["Nama"] = Console.ReadLine();
-
-            Console.Write("NIM: ");
-            data["NIM"] = Console.ReadLine();
+            files = new Dictionary<string, CantumFoto.Foto>();
 
             if (Enum.TryParse(serviceType, out service))
             {
                 if (service == SERVICE_TYPE.PERBAIKAN_KTM)
                 {
                     showPerbaikanForm();
-                } else
+                }
+                else
                 {
                     showPenggantianForm();
                 }
             }
-        } 
+        }
+
     }
 }

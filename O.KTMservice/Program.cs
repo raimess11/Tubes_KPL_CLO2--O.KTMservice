@@ -1,10 +1,20 @@
-﻿namespace O.KTMservice
+﻿using DBServerAPI;
+using MenyantumkanDokumen;
+
+namespace O.KTMservice
 {
-    internal class Program
+
+    
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            
+            Form form = new Form();
+
+            form.showForm("PENGGANTIAN_KTM");
+
+            Console.WriteLine(form.files["KSM"]);
         }
     }
 }
