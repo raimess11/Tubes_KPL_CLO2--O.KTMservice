@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace DBServerAPI
 {
+
     public class Account
     {
         static private int UIDgenerate {get; set;} = 0;
@@ -24,6 +25,5 @@ namespace DBServerAPI
         }
 
         public int getUID() { return UID; }
-
     }
 }

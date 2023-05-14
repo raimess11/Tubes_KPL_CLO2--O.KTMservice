@@ -9,6 +9,21 @@ namespace DBServerAPI
         static private List<Account> userAccounts { get; set; } = new List<Account>() { (Account)new Staff("admin", "admin", 123), (Account)new Mahasiswa("rahma", "password", 1302210095) }; 
         private List<Object> dataPeryaratan = new List<object>();
         private List<Request> requests = new List<Request>();
+      
+        public static void addRequest(Request request)
+        {
+            requests.Add(request);
+        }
+
+        public static List<Request> getRequests()
+        {
+            return requests;
+        }
+
+        public static void removeRequest(int id)
+        {
+            requests.RemoveAt(id);
+        }
 
         static public bool Autentication(Account user)
         {

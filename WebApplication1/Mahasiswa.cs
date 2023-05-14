@@ -9,13 +9,11 @@ namespace DBServerAPI
 {
     public class Mahasiswa : Account
     {
-        private int nim;
+        public int nim { get; set; }
         //image KSM;
         //image KTM;
-        public Mahasiswa()
-        {
 
-        }
+        public Mahasiswa() { }
         public Mahasiswa(string nama, string password, int nim)
         {
             this.name = nama;
