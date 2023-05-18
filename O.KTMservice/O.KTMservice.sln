@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "O.KTMservice", "O.KTMservic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MenyantumkanDokumen", "..\MenyantumkanDokumen\MenyantumkanDokumen.csproj", "{4FD5550C-4EEE-44E4-B874-32F40AD7D2E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormTests", "..\FormTests\FormTests.csproj", "{A1537665-151A-467A-AEE5-628075645FBD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{4FD5550C-4EEE-44E4-B874-32F40AD7D2E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FD5550C-4EEE-44E4-B874-32F40AD7D2E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FD5550C-4EEE-44E4-B874-32F40AD7D2E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1537665-151A-467A-AEE5-628075645FBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1537665-151A-467A-AEE5-628075645FBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1537665-151A-467A-AEE5-628075645FBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1537665-151A-467A-AEE5-628075645FBD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

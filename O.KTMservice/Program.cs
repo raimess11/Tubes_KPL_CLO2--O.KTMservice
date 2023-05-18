@@ -10,11 +10,8 @@ namespace O.KTMservice
         static void Main(string[] args)
         {
             
-            Form form = new Form();
+            Form.showForm("PENGGANTIAN_KTM");
 
-            form.showForm("PENGGANTIAN_KTM");
-
-            Console.WriteLine(form.files["KSM"]);
         }
     }
 }
