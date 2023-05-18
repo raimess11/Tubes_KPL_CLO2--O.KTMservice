@@ -86,7 +86,7 @@
             return nextState;
         }
 
-        public void activateTrigger(Trigger trigger)
+        public void activateTrigger(Trigger trigger) //mengupdate status request.
         {
             State nextState = getNextState(StatePengurusan, trigger);
             StatePengurusan = nextState;

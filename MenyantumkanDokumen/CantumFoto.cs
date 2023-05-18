@@ -4,7 +4,7 @@ namespace MenyantumkanDokumen
 {
     public static class CantumFoto
     {
-        public static Foto holdFotoAPI(string path)
+        public static Foto holdFotoAPI(string path) //image file into array of byte
         {
             // Load file meta data with FileInfo
             FileInfo fileInfo = new FileInfo(path);
@@ -26,7 +26,7 @@ namespace MenyantumkanDokumen
             return e;
         }
 
-        public static void serializeFoto(string path)
+        public static void serializeFoto(string path) //serilize Objek Foto into json
         {
 
             // Load file meta data with FileInfo
@@ -58,14 +58,14 @@ namespace MenyantumkanDokumen
 
         }
 
-        public static Foto deserializeFoto(string path)
+        public static Foto deserializeFoto(string path) //from json to Objek Foto
         {
             string jsonstr = File.ReadAllText(path);
             Foto imgMetadata = JsonSerializer.Deserialize<Foto>(jsonstr);
             return imgMetadata;
         }
 
-        public static void saveFoto(string savePath, Foto image)
+        public static void saveFoto(string savePath, Foto image) //from object Foto/byte[] to Image file
         {
             try
             {

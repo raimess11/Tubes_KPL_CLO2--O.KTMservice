@@ -7,9 +7,10 @@ namespace DBServerAPI
     public class DataBase
     {
         static private List<Account> userAccounts { get; set; } = new List<Account>() { (Account)new Staff("admin", "admin", 123), (Account)new Mahasiswa("rahma", "password", 1302210095) }; 
-        private List<Object> dataPeryaratan = new List<object>();
-        private List<Request> requests = new List<Request>();
-      
+        static private List<Object> dataPeryaratan = new List<object>();
+        static public List<Request> requests = new List<Request>();
+        
+        public DataBase() { }
         public static void addRequest(Request request)
         {
             requests.Add(request);

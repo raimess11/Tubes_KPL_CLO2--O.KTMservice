@@ -5,7 +5,9 @@ VisualStudioVersion = 17.5.33414.496
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "O.KTMservice", "O.KTMservice.csproj", "{824054FE-6228-4680-BDD8-30B020E4EB7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBServerAPI", "..\WebApplication1\DBServerAPI.csproj", "{539B929C-78C6-410C-B8E1-D5DC52287A5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DBServerAPI", "..\WebApplication1\DBServerAPI.csproj", "{539B929C-78C6-410C-B8E1-D5DC52287A5F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MenyantumkanDokumen", "..\MenyantumkanDokumen\MenyantumkanDokumen.csproj", "{B6EB434F-6DFD-42CA-9FB1-BB90E68CEC83}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{539B929C-78C6-410C-B8E1-D5DC52287A5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{539B929C-78C6-410C-B8E1-D5DC52287A5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{539B929C-78C6-410C-B8E1-D5DC52287A5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6EB434F-6DFD-42CA-9FB1-BB90E68CEC83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6EB434F-6DFD-42CA-9FB1-BB90E68CEC83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6EB434F-6DFD-42CA-9FB1-BB90E68CEC83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6EB434F-6DFD-42CA-9FB1-BB90E68CEC83}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
