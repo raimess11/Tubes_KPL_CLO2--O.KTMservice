@@ -10,9 +10,15 @@ namespace DBServerAPI
 {
     public class Form
     {
-        public Dictionary<string, CantumFoto.Foto> files { get; set; }
+        public static Dictionary<string, CantumFoto.Foto> files { get; set; } = FileClass<CantumFoto.Foto>.files;
 
-        private void showPerbaikanForm()
+        public static class FileClass<T>
+        {
+            public static Dictionary<string, T> files = new Dictionary<string, T>();
+
+        }
+
+        private static void showPerbaikanForm()
         {
             string path;
 
@@ -32,7 +38,7 @@ namespace DBServerAPI
             files["BuktiPembayaran"] = CantumFoto.holdFotoAPI(path);
         }
 
-        private void showPenggantianForm()
+        private static void showPenggantianForm()
         {
             string path;
 
@@ -52,12 +58,11 @@ namespace DBServerAPI
             files["BuktiPembayaran"] = CantumFoto.holdFotoAPI(path);
         }
 
-        public void showForm(string serviceType)
+        public static void showForm(string serviceType)
         {
             string input;
             SERVICE_TYPE service;
 
-            files = new Dictionary<string, CantumFoto.Foto>();
 
             if (Enum.TryParse(serviceType, out service))
             {

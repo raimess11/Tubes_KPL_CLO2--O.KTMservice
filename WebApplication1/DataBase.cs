@@ -8,7 +8,7 @@ namespace DBServerAPI
     {
         static private List<Account> userAccounts { get; set; } = new List<Account>() { (Account)new Staff("admin", "admin", 123), (Account)new Mahasiswa("rahma", "password", 1302210095) }; 
         private List<Object> dataPeryaratan = new List<object>();
-        private List<Request> requests = new List<Request>();
+        public static List<Request> requests = new List<Request>();
       
         public static void addRequest(Request request)
         {

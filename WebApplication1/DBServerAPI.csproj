@@ -14,4 +14,8 @@
     <Folder Include="Class\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MenyantumkanDokumen\MenyantumkanDokumen.csproj" />
+  </ItemGroup>
+
 </Project>
