@@ -45,5 +45,6 @@ namespace DBServerAPI
         }
 
         static public List<Account> getUserAccounts() {  return userAccounts; }
+        static public void addAccount(Account account) { userAccounts.Add(account); }
     }
 }

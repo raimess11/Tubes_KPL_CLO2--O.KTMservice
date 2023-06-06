@@ -1,5 +1,3 @@
-
-
 namespace DBServerAPI
 {
     public class Program

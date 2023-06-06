@@ -16,13 +16,13 @@ namespace O.KTMservice
         private static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
-
+            UserLogin();
 
             
             
         }
 
-        public void UserLogin()
+        static public void UserLogin()
         {
             Login().GetAwaiter().GetResult();
         }
@@ -40,7 +40,7 @@ namespace O.KTMservice
             
             string url = "http://localhost:5299/api/Account/login?name="+name+"&password="+password;
             HttpResponseMessage response = new HttpResponseMessage();
-
+            
             try
             {
                 response = await client.GetAsync(url);
@@ -48,6 +48,7 @@ namespace O.KTMservice
             catch (Exception ex)
             {
                 Console.WriteLine("username dan password salah");
+                return;
             }
 
             try
@@ -60,7 +61,11 @@ namespace O.KTMservice
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+                return;
             }
+
+            Console.WriteLine(user.ToString());
+
         }
     }
 }

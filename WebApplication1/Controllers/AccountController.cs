@@ -18,12 +18,12 @@ namespace DBServerAPI.Controllers
             return DataBase.getUserAccounts();
         }
 
-        // GET api/<DataBaseController>/5
+        /*// GET api/<DataBaseController>/5
         [HttpGet("{id}")]
         public string Get(int id)
         {
             return "value";
-        }
+        }*/
 
         [HttpGet("login")]
         public Account Login(string name, string password)
@@ -38,11 +38,6 @@ namespace DBServerAPI.Controllers
             return null;
         }
 
-        // POST api/<DataBaseController>
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
 
         // PUT api/<DataBaseController>/5
         [HttpPut("{id}")]
