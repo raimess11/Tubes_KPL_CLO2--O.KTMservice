@@ -132,6 +132,7 @@
             _arrowKiriButton.TabIndex = 4;
             _arrowKiriButton.Text = "<";
             _arrowKiriButton.UseVisualStyleBackColor = false;
+            _arrowKiriButton.Click += _arrowKiriButton_Click;
             // 
             // _arrowKananButton
             // 
@@ -146,7 +147,6 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.imagePenggunaanWebsite;
             pictureBox1.Location = new Point(146, 71);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(518, 219);

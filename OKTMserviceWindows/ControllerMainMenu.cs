@@ -28,7 +28,7 @@ namespace OKTMserviceWindows
 
         public void ChangeImageRight()
         {
-            if (_bannerNow > 0 && _bannerNow < 3)
+            if (_bannerNow >= 0 && _bannerNow < 3)
             {
                 _bannerNow++;
                 PictureBox pb = _mainMenu.getPictureBox1();
@@ -42,6 +42,25 @@ namespace OKTMserviceWindows
                 pb.SizeMode = PictureBoxSizeMode.StretchImage;
             }
             
+        }
+
+        public void ChangeImageLeft()
+        {
+            if (_bannerNow > 0 && _bannerNow <= 3)
+            {
+                _bannerNow++;
+                PictureBox pb = _mainMenu.getPictureBox1();
+                if (_bannerNow == 1)
+                {
+                    pb.ImageLocation = _bannerImages.showBanner(Banner.banner.PerbaikanKTM);
+                }
+                else if (_bannerNow == 0)
+                {
+                    pb.ImageLocation = _bannerImages.showBanner(Banner.banner.PenggunaanWebsite);
+                }
+                pb.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+
         }
     }
 }

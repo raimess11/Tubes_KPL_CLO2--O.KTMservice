@@ -30,5 +30,10 @@ namespace OKTMserviceWindows
         {
             return pictureBox1;
         }
+
+        private void _arrowKiriButton_Click(object sender, EventArgs e)
+        {
+            _ck.ChangeImageLeft();
+        }
     }
 }
