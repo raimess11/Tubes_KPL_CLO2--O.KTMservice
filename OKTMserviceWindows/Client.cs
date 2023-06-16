@@ -10,10 +10,5 @@ namespace O.KTMservice
     internal class Client
     {
         public static Mahasiswa mahasiswa;
-
-        public static void run()
-        {
-            // panggil GUI pertama yang akan ditampilkan
-        }
     }
 }
