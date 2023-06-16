@@ -1,23 +1,19 @@
 using DBServerAPI;
-using O.KTMservice;
+//using O.KTMservice;
 
 namespace OKTMserviceWindows
 {
-    public partial class Login : Form
+    public partial class Login : DBServerAPI.Form
     {
-        
         public Login()
         {
             InitializeComponent();
-
-            this.Text = "Login";
-            
+       
         }
-
 
         private void Login_Load(object sender, EventArgs e)
         {
-            LoginController.UserLogin();
+            
         }
 
         private void textBox_username_TextChanged(object sender, EventArgs e)
@@ -37,11 +33,9 @@ namespace OKTMserviceWindows
 
             if (textBox_username.Text == username && textBox_password.Text == password)
             {
-                this.Hide();
+                
                 MessageBox.Show("Login successful!");
-            }
-
-            LoginController.UserLogin();
+            }            
         }
 
         private void pictureBox_penggunaanWebsite_Click(object sender, EventArgs e)
@@ -77,7 +71,7 @@ namespace OKTMserviceWindows
 
         private void Login_Load_1(object sender, EventArgs e)
         {
-            LoginController.UserLogin();
+            
         }
     }
 }
