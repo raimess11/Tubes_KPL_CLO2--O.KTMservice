@@ -1,6 +1,6 @@
 ﻿namespace OKTMserviceWindows
 {
-    partial class KTMBermasalahMenu
+    partial class GantiKTMMenu
     {
         /// <summary>
         /// Required designer variable.

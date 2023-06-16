@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace OKTMserviceWindows
 {
-    public partial class KTMBermasalahMenu : Form
+    public partial class GantiKTMMenu : Form
     {
-        public KTMBermasalahMenu()
+        public GantiKTMMenu()
         {
             InitializeComponent();
         }
