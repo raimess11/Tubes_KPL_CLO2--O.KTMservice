@@ -20,5 +20,15 @@ namespace OKTMserviceWindows
             InitializeComponent();
             _ck = new ControllerMainMenu(this);
         }
+
+        private void _arrowKananButton_Click(object sender, EventArgs e)
+        {
+            _ck.ChangeImageRight();
+        }
+
+        public PictureBox getPictureBox1()
+        {
+            return pictureBox1;
+        }
     }
 }

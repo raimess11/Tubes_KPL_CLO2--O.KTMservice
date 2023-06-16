@@ -1,4 +1,4 @@
-﻿namespace DBServerAPI
+﻿namespace OKTMserviceWindows
 {
     public class Banner
     {
@@ -10,12 +10,12 @@
             PenggantianKTM
         }
 
-        public void showBanner(banner x)
+        public string showBanner(banner x)
         {
             //i.s. Terdapat parameter x sebagai indeks untuk enum banner
             //f.s. Menampilkan imageBanner indeks yang sesuai dengan parameter
             string[] imageBanner = { "imagePenggunaanWebsite.jpg", "imagePerbaikanKTM.jpg", "imagePenggantianKTM.jpg" };
-            Console.WriteLine(imageBanner[(int)x]);
+            return imageBanner[(int)x];
         }
 
         // Runtime Configuration

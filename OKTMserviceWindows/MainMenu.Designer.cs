@@ -142,6 +142,7 @@
             _arrowKananButton.TabIndex = 3;
             _arrowKananButton.Text = ">";
             _arrowKananButton.UseVisualStyleBackColor = false;
+            _arrowKananButton.Click += _arrowKananButton_Click;
             // 
             // pictureBox1
             // 
