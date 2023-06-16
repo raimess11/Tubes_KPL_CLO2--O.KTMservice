@@ -9,7 +9,8 @@ namespace DBServerAPI
     public enum SERVICE_TYPE
     {
         PERBAIKAN_KTM,
-        PENGGANTIAN_KTM
+        PENGGANTIAN_KTM,
+        KTM_BERMASALAH
     }
     public enum REQUEST_STATUS
     {
