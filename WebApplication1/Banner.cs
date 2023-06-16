@@ -10,12 +10,12 @@
             PenggantianKTM
         }
 
-        public void showBanner(banner x)
+        public void showBanner(banner index)
         {
             //i.s. Terdapat parameter x sebagai indeks untuk enum banner
             //f.s. Menampilkan imageBanner indeks yang sesuai dengan parameter
             string[] imageBanner = { "imagePenggunaanWebsite.jpg", "imagePerbaikanKTM.jpg", "imagePenggantianKTM.jpg" };
-            Console.WriteLine(imageBanner[(int)x]);
+            Console.WriteLine(imageBanner[(int)index]);
         }
 
         // Runtime Configuration

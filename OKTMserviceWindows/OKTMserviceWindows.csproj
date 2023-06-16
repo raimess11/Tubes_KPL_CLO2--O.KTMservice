@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\O.KTMservice\O.KTMservice.csproj" />
     <ProjectReference Include="..\WebApplication1\DBServerAPI.csproj" />
   </ItemGroup>
 

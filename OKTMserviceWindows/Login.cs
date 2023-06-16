@@ -8,7 +8,7 @@ namespace OKTMserviceWindows
         public Login()
         {
             InitializeComponent();
-       
+
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -33,9 +33,9 @@ namespace OKTMserviceWindows
 
             if (textBox_username.Text == username && textBox_password.Text == password)
             {
-                
+
                 MessageBox.Show("Login successful!");
-            }            
+            }
         }
 
         private void pictureBox_penggunaanWebsite_Click(object sender, EventArgs e)
@@ -60,19 +60,5 @@ namespace OKTMserviceWindows
                 textBox_password.UseSystemPasswordChar = true;
             }
         }
-
-        private void btn_ToLeft_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_ToRight_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Login_Load_1(object sender, EventArgs e)
-        {
-            
-        }
     }
+}
