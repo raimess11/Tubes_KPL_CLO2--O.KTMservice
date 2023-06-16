@@ -46,13 +46,16 @@
             textBox4 = new TextBox();
             _submitButton = new Button();
             label4 = new Label();
-            label5 = new Label();
+            _buktiPembayaran = new Label();
             textBox5 = new TextBox();
+            panel1 = new Panel();
             SuspendLayout();
             // 
             // _labelNamaMahasiswa
             // 
             _labelNamaMahasiswa.AutoSize = true;
+            _labelNamaMahasiswa.BackColor = Color.Red;
+            _labelNamaMahasiswa.ForeColor = Color.White;
             _labelNamaMahasiswa.Location = new Point(38, 38);
             _labelNamaMahasiswa.Name = "_labelNamaMahasiswa";
             _labelNamaMahasiswa.Size = new Size(100, 15);
@@ -63,6 +66,8 @@
             // _ValueNameMahasiswa
             // 
             _ValueNameMahasiswa.AutoSize = true;
+            _ValueNameMahasiswa.BackColor = Color.Red;
+            _ValueNameMahasiswa.ForeColor = Color.White;
             _ValueNameMahasiswa.Location = new Point(197, 38);
             _ValueNameMahasiswa.Name = "_ValueNameMahasiswa";
             _ValueNameMahasiswa.Size = new Size(67, 15);
@@ -72,6 +77,8 @@
             // _labelNIM
             // 
             _labelNIM.AutoSize = true;
+            _labelNIM.BackColor = Color.Red;
+            _labelNIM.ForeColor = Color.White;
             _labelNIM.Location = new Point(454, 38);
             _labelNIM.Name = "_labelNIM";
             _labelNIM.Size = new Size(30, 15);
@@ -82,6 +89,8 @@
             // _NIMValue
             // 
             _NIMValue.AutoSize = true;
+            _NIMValue.BackColor = Color.Red;
+            _NIMValue.ForeColor = Color.White;
             _NIMValue.Location = new Point(522, 38);
             _NIMValue.Name = "_NIMValue";
             _NIMValue.Size = new Size(58, 15);
@@ -206,12 +215,14 @@
             // 
             // _submitButton
             // 
+            _submitButton.BackColor = Color.Red;
+            _submitButton.ForeColor = Color.White;
             _submitButton.Location = new Point(306, 274);
             _submitButton.Name = "_submitButton";
             _submitButton.Size = new Size(139, 23);
             _submitButton.TabIndex = 3;
             _submitButton.Text = "Submit";
-            _submitButton.UseVisualStyleBackColor = true;
+            _submitButton.UseVisualStyleBackColor = false;
             _submitButton.Click += button1_Click;
             // 
             // label4
@@ -225,16 +236,16 @@
             label4.Text = ":";
             label4.UseWaitCursor = true;
             // 
-            // label5
+            // _buktiPembayaran
             // 
-            label5.AutoEllipsis = true;
-            label5.AutoSize = true;
-            label5.Location = new Point(38, 223);
-            label5.Name = "label5";
-            label5.Size = new Size(137, 15);
-            label5.TabIndex = 0;
-            label5.Text = "Upload Surat Kehilangan";
-            label5.UseWaitCursor = true;
+            _buktiPembayaran.AutoEllipsis = true;
+            _buktiPembayaran.AutoSize = true;
+            _buktiPembayaran.Location = new Point(38, 223);
+            _buktiPembayaran.Name = "_buktiPembayaran";
+            _buktiPembayaran.Size = new Size(144, 15);
+            _buktiPembayaran.TabIndex = 0;
+            _buktiPembayaran.Text = "Upload Bukti Pembayaran";
+            _buktiPembayaran.UseWaitCursor = true;
             // 
             // textBox5
             // 
@@ -242,6 +253,14 @@
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(164, 23);
             textBox5.TabIndex = 2;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.Red;
+            panel1.Location = new Point(12, 20);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(682, 45);
+            panel1.TabIndex = 4;
             // 
             // GantiKTMMenu
             // 
@@ -256,7 +275,7 @@
             Controls.Add(textBox1);
             Controls.Add(_NIMValue);
             Controls.Add(_labelNIM);
-            Controls.Add(label5);
+            Controls.Add(_buktiPembayaran);
             Controls.Add(_ValueNameMahasiswa);
             Controls.Add(_labelUploadSuratKehilangan);
             Controls.Add(_labelProgramStudi);
@@ -268,8 +287,10 @@
             Controls.Add(_labelColon1);
             Controls.Add(_labelTahunAjar);
             Controls.Add(_labelNamaMahasiswa);
+            Controls.Add(panel1);
             Name = "GantiKTMMenu";
             Text = "KTMBermasalahMenu";
+            Load += GantiKTMMenu_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -296,5 +317,7 @@
         private Label label4;
         private Label label5;
         private TextBox textBox5;
+        private Panel panel1;
+        private Label _buktiPembayaran;
     }
 }

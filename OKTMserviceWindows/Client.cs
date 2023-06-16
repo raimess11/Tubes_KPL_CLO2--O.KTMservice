@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DBServerAPI;
 
-namespace O.KTMservice
+namespace OKTMserviceWindows
 {
     internal class Client
     {
