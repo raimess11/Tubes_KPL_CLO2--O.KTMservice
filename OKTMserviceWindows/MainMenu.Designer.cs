@@ -28,122 +28,120 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
-            button3 = new Button();
-            panel2 = new Panel();
-            panel3 = new Panel();
-            button4 = new Button();
-            button6 = new Button();
-            button5 = new Button();
-            button2 = new Button();
-            button1 = new Button();
+            _headerPanel = new Panel();
+            _loginButton = new Button();
+            _menuPanel = new Panel();
+            _buttonsPanel = new Panel();
+            _penggantianKtmButton = new Button();
+            _laporKtmButton = new Button();
+            _perbaikanKtmButton = new Button();
+            _arrowKiriButton = new Button();
+            _arrowKananButton = new Button();
             pictureBox1 = new PictureBox();
-            panel1.SuspendLayout();
-            panel2.SuspendLayout();
-            panel3.SuspendLayout();
+            _headerPanel.SuspendLayout();
+            _menuPanel.SuspendLayout();
+            _buttonsPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // panel1
+            // _headerPanel
             // 
-            panel1.BackColor = Color.FromArgb(192, 0, 0);
-            panel1.Controls.Add(button3);
-            panel1.Location = new Point(3, 3);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(805, 50);
-            panel1.TabIndex = 1;
+            _headerPanel.BackColor = Color.FromArgb(192, 0, 0);
+            _headerPanel.Controls.Add(_loginButton);
+            _headerPanel.Location = new Point(3, 3);
+            _headerPanel.Name = "_headerPanel";
+            _headerPanel.Size = new Size(805, 50);
+            _headerPanel.TabIndex = 1;
             // 
-            // button3
+            // _loginButton
             // 
-            button3.BackColor = Color.FromArgb(192, 0, 0);
-            button3.FlatAppearance.BorderColor = SystemColors.ActiveCaptionText;
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(739, 13);
-            button3.Name = "button3";
-            button3.Size = new Size(52, 34);
-            button3.TabIndex = 8;
-            button3.Text = "Login";
-            button3.UseVisualStyleBackColor = false;
-            button3.Click += button3_Click;
+            _loginButton.BackColor = Color.FromArgb(192, 0, 0);
+            _loginButton.FlatAppearance.BorderColor = SystemColors.ActiveCaptionText;
+            _loginButton.ForeColor = Color.White;
+            _loginButton.Location = new Point(739, 13);
+            _loginButton.Name = "_loginButton";
+            _loginButton.Size = new Size(52, 34);
+            _loginButton.TabIndex = 8;
+            _loginButton.Text = "Login";
+            _loginButton.UseVisualStyleBackColor = false;
             // 
-            // panel2
+            // _menuPanel
             // 
-            panel2.Controls.Add(panel3);
-            panel2.Controls.Add(button2);
-            panel2.Controls.Add(button1);
-            panel2.Controls.Add(pictureBox1);
-            panel2.Controls.Add(panel1);
-            panel2.Location = new Point(-6, -9);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(811, 465);
-            panel2.TabIndex = 2;
+            _menuPanel.Controls.Add(_buttonsPanel);
+            _menuPanel.Controls.Add(_arrowKiriButton);
+            _menuPanel.Controls.Add(_arrowKananButton);
+            _menuPanel.Controls.Add(pictureBox1);
+            _menuPanel.Controls.Add(_headerPanel);
+            _menuPanel.Location = new Point(-6, -9);
+            _menuPanel.Name = "_menuPanel";
+            _menuPanel.Size = new Size(811, 465);
+            _menuPanel.TabIndex = 2;
             // 
-            // panel3
+            // _buttonsPanel
             // 
-            panel3.Controls.Add(button4);
-            panel3.Controls.Add(button6);
-            panel3.Controls.Add(button5);
-            panel3.Location = new Point(236, 322);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(323, 92);
-            panel3.TabIndex = 8;
+            _buttonsPanel.Controls.Add(_penggantianKtmButton);
+            _buttonsPanel.Controls.Add(_laporKtmButton);
+            _buttonsPanel.Controls.Add(_perbaikanKtmButton);
+            _buttonsPanel.Location = new Point(236, 322);
+            _buttonsPanel.Name = "_buttonsPanel";
+            _buttonsPanel.Size = new Size(323, 92);
+            _buttonsPanel.TabIndex = 8;
             // 
-            // button4
+            // _penggantianKtmButton
             // 
-            button4.BackColor = Color.FromArgb(192, 0, 0);
-            button4.FlatAppearance.BorderColor = SystemColors.ActiveCaptionText;
-            button4.ForeColor = Color.White;
-            button4.Location = new Point(3, 3);
-            button4.Name = "button4";
-            button4.Size = new Size(90, 84);
-            button4.TabIndex = 5;
-            button4.Text = "Penggantian KTM";
-            button4.UseVisualStyleBackColor = false;
+            _penggantianKtmButton.BackColor = Color.FromArgb(192, 0, 0);
+            _penggantianKtmButton.FlatAppearance.BorderColor = SystemColors.ActiveCaptionText;
+            _penggantianKtmButton.ForeColor = Color.White;
+            _penggantianKtmButton.Location = new Point(3, 3);
+            _penggantianKtmButton.Name = "_penggantianKtmButton";
+            _penggantianKtmButton.Size = new Size(90, 84);
+            _penggantianKtmButton.TabIndex = 5;
+            _penggantianKtmButton.Text = "Penggantian KTM";
+            _penggantianKtmButton.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // _laporKtmButton
             // 
-            button6.BackColor = Color.FromArgb(192, 0, 0);
-            button6.FlatAppearance.BorderColor = SystemColors.ActiveCaptionText;
-            button6.ForeColor = Color.White;
-            button6.Location = new Point(233, 3);
-            button6.Name = "button6";
-            button6.Size = new Size(90, 84);
-            button6.TabIndex = 7;
-            button6.Text = "Lapor KTM";
-            button6.UseVisualStyleBackColor = false;
+            _laporKtmButton.BackColor = Color.FromArgb(192, 0, 0);
+            _laporKtmButton.FlatAppearance.BorderColor = SystemColors.ActiveCaptionText;
+            _laporKtmButton.ForeColor = Color.White;
+            _laporKtmButton.Location = new Point(233, 3);
+            _laporKtmButton.Name = "_laporKtmButton";
+            _laporKtmButton.Size = new Size(90, 84);
+            _laporKtmButton.TabIndex = 7;
+            _laporKtmButton.Text = "Lapor KTM";
+            _laporKtmButton.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // _perbaikanKtmButton
             // 
-            button5.BackColor = Color.FromArgb(192, 0, 0);
-            button5.FlatAppearance.BorderColor = SystemColors.ActiveCaptionText;
-            button5.ForeColor = Color.White;
-            button5.Location = new Point(118, 3);
-            button5.Name = "button5";
-            button5.Size = new Size(90, 84);
-            button5.TabIndex = 6;
-            button5.Text = "Perbaikan KTM";
-            button5.UseVisualStyleBackColor = false;
+            _perbaikanKtmButton.BackColor = Color.FromArgb(192, 0, 0);
+            _perbaikanKtmButton.FlatAppearance.BorderColor = SystemColors.ActiveCaptionText;
+            _perbaikanKtmButton.ForeColor = Color.White;
+            _perbaikanKtmButton.Location = new Point(118, 3);
+            _perbaikanKtmButton.Name = "_perbaikanKtmButton";
+            _perbaikanKtmButton.Size = new Size(90, 84);
+            _perbaikanKtmButton.TabIndex = 6;
+            _perbaikanKtmButton.Text = "Perbaikan KTM";
+            _perbaikanKtmButton.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // _arrowKiriButton
             // 
-            button2.BackColor = SystemColors.ControlLight;
-            button2.Location = new Point(103, 173);
-            button2.Name = "button2";
-            button2.Size = new Size(24, 23);
-            button2.TabIndex = 4;
-            button2.Text = "<";
-            button2.UseVisualStyleBackColor = false;
+            _arrowKiriButton.BackColor = SystemColors.ControlLight;
+            _arrowKiriButton.Location = new Point(103, 173);
+            _arrowKiriButton.Name = "_arrowKiriButton";
+            _arrowKiriButton.Size = new Size(24, 23);
+            _arrowKiriButton.TabIndex = 4;
+            _arrowKiriButton.Text = "<";
+            _arrowKiriButton.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // _arrowKananButton
             // 
-            button1.BackColor = SystemColors.ControlLight;
-            button1.Location = new Point(682, 173);
-            button1.Name = "button1";
-            button1.Size = new Size(24, 23);
-            button1.TabIndex = 3;
-            button1.Text = ">";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            _arrowKananButton.BackColor = SystemColors.ControlLight;
+            _arrowKananButton.Location = new Point(682, 173);
+            _arrowKananButton.Name = "_arrowKananButton";
+            _arrowKananButton.Size = new Size(24, 23);
+            _arrowKananButton.TabIndex = 3;
+            _arrowKananButton.Text = ">";
+            _arrowKananButton.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -160,26 +158,26 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(panel2);
+            Controls.Add(_menuPanel);
             Name = "MainMenu";
             Text = "MainMenu";
-            panel1.ResumeLayout(false);
-            panel2.ResumeLayout(false);
-            panel3.ResumeLayout(false);
+            _headerPanel.ResumeLayout(false);
+            _menuPanel.ResumeLayout(false);
+            _buttonsPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
-        private Panel panel1;
-        private Panel panel2;
-        private Button button1;
+        private Panel _headerPanel;
+        private Panel _menuPanel;
+        private Button _arrowKananButton;
         private PictureBox pictureBox1;
-        private Button button2;
-        private Button button4;
-        private Panel panel3;
-        private Button button6;
-        private Button button5;
-        private Button button3;
+        private Button _arrowKiriButton;
+        private Button _penggantianKtmButton;
+        private Panel _buttonsPanel;
+        private Button _laporKtmButton;
+        private Button _perbaikanKtmButton;
+        private Button _loginButton;
     }
 }
