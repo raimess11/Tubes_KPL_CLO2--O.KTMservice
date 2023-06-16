@@ -9,12 +9,12 @@ using static System.Net.WebRequestMethods;
 
 namespace O.KTMservice
 {
-    internal class Program : LoginController
+    internal class Program
     {
         private static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
-            UserLogin();
+            LoginController.UserLogin();
 
             
             

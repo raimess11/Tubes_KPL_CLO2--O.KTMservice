@@ -12,18 +12,14 @@ namespace O.KTMservice
             Login().GetAwaiter().GetResult();
         }
 
-        static async Task Login()
+        private static async Task Login()
         {
-            //calling the method using method below.
-            //Login().GetAwaiter().GetResult();
-
-
             Console.Write("username: ");
             string name = Console.ReadLine();
             Console.Write("password: ");
             string password = Console.ReadLine();
 
-            string url = "http://localhost:5299/api/Account/login?name=" + name + "&password=" + password;
+            string url = $"http://localhost:5299/api/Account/login?name={name}&password={password}";
             HttpResponseMessage response = new HttpResponseMessage();
 
             try
