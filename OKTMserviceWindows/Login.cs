@@ -1,5 +1,5 @@
 using DBServerAPI;
-//using O.KTMservice;
+using O.KTMservice;
 
 namespace OKTMserviceWindows
 {
@@ -13,7 +13,7 @@ namespace OKTMserviceWindows
 
         private void Login_Load(object sender, EventArgs e)
         {
-            
+            LoginController1.UserLogin();
         }
 
         private void textBox_username_TextChanged(object sender, EventArgs e)
@@ -45,11 +45,13 @@ namespace OKTMserviceWindows
 
             // Menampilkan banner PenggunaanWebsite
             banner.showBanner(Banner.banner.PenggunaanWebsite);
+            banner.showBanner(Banner.banner.PerbaikanKTM);
+            banner.showBanner(Banner.banner.PenggantianKTM);
         }
 
         private void showPassword_CheckedChanged(object sender, EventArgs e)
         {
-            if (showPassword.Checked == true)
+            if (showPassword.Checked)
             {
                 textBox_password.UseSystemPasswordChar = false;
             }
@@ -74,4 +76,3 @@ namespace OKTMserviceWindows
             
         }
     }
-}
