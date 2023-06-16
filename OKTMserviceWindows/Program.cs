@@ -12,6 +12,8 @@ namespace OKTMserviceWindows
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new GantiKTMMenu());
+            // panggil GUI pertama yang akan ditampilkan, ganti Login() ==> [nama GUI]()
+            Application.Run(new Login());
         }
     }
 }
