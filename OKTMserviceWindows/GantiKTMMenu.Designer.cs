@@ -35,16 +35,19 @@
             _labelTahunAjar = new Label();
             _labelProgramStudi = new Label();
             _labelUploadKSM = new Label();
-            _labelUploadKTM = new Label();
+            _labelUploadSuratKehilangan = new Label();
             _labelColon1 = new Label();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
-            textBox3 = new TextBox();
+            _uploadKSMTeksBox = new TextBox();
             textBox4 = new TextBox();
-            button1 = new Button();
+            _submitButton = new Button();
+            label4 = new Label();
+            label5 = new Label();
+            textBox5 = new TextBox();
             SuspendLayout();
             // 
             // _labelNamaMahasiswa
@@ -60,7 +63,7 @@
             // _ValueNameMahasiswa
             // 
             _ValueNameMahasiswa.AutoSize = true;
-            _ValueNameMahasiswa.Location = new Point(183, 38);
+            _ValueNameMahasiswa.Location = new Point(197, 38);
             _ValueNameMahasiswa.Name = "_ValueNameMahasiswa";
             _ValueNameMahasiswa.Size = new Size(67, 15);
             _ValueNameMahasiswa.TabIndex = 1;
@@ -95,7 +98,6 @@
             _labelTahunAjar.TabIndex = 0;
             _labelTahunAjar.Text = "Tahun Ajar";
             _labelTahunAjar.UseWaitCursor = true;
-            _labelTahunAjar.Click += _labelTahunAjar_Click;
             // 
             // _labelProgramStudi
             // 
@@ -107,7 +109,6 @@
             _labelProgramStudi.TabIndex = 0;
             _labelProgramStudi.Text = "Program Studi";
             _labelProgramStudi.UseWaitCursor = true;
-            _labelProgramStudi.Click += _labelProgramStudi_Click;
             // 
             // _labelUploadKSM
             // 
@@ -120,34 +121,33 @@
             _labelUploadKSM.Text = "Upload KSM";
             _labelUploadKSM.UseWaitCursor = true;
             // 
-            // _labelUploadKTM
+            // _labelUploadSuratKehilangan
             // 
-            _labelUploadKTM.AutoEllipsis = true;
-            _labelUploadKTM.AutoSize = true;
-            _labelUploadKTM.Location = new Point(38, 183);
-            _labelUploadKTM.Name = "_labelUploadKTM";
-            _labelUploadKTM.Size = new Size(72, 15);
-            _labelUploadKTM.TabIndex = 0;
-            _labelUploadKTM.Text = "Upload KTM";
-            _labelUploadKTM.UseWaitCursor = true;
+            _labelUploadSuratKehilangan.AutoEllipsis = true;
+            _labelUploadSuratKehilangan.AutoSize = true;
+            _labelUploadSuratKehilangan.Location = new Point(38, 183);
+            _labelUploadSuratKehilangan.Name = "_labelUploadSuratKehilangan";
+            _labelUploadSuratKehilangan.Size = new Size(137, 15);
+            _labelUploadSuratKehilangan.TabIndex = 0;
+            _labelUploadSuratKehilangan.Text = "Upload Surat Kehilangan";
+            _labelUploadSuratKehilangan.UseWaitCursor = true;
             // 
             // _labelColon1
             // 
             _labelColon1.AutoEllipsis = true;
             _labelColon1.AutoSize = true;
-            _labelColon1.Location = new Point(155, 74);
+            _labelColon1.Location = new Point(181, 74);
             _labelColon1.Name = "_labelColon1";
             _labelColon1.Size = new Size(10, 15);
             _labelColon1.TabIndex = 0;
             _labelColon1.Text = ":";
             _labelColon1.UseWaitCursor = true;
-            _labelColon1.Click += _labelColon1_Click;
             // 
             // label1
             // 
             label1.AutoEllipsis = true;
             label1.AutoSize = true;
-            label1.Location = new Point(155, 107);
+            label1.Location = new Point(181, 107);
             label1.Name = "label1";
             label1.Size = new Size(10, 15);
             label1.TabIndex = 0;
@@ -158,19 +158,18 @@
             // 
             label2.AutoEllipsis = true;
             label2.AutoSize = true;
-            label2.Location = new Point(155, 144);
+            label2.Location = new Point(181, 144);
             label2.Name = "label2";
             label2.Size = new Size(10, 15);
             label2.TabIndex = 0;
             label2.Text = ":";
             label2.UseWaitCursor = true;
-            label2.Click += label2_Click;
             // 
             // label3
             // 
             label3.AutoEllipsis = true;
             label3.AutoSize = true;
-            label3.Location = new Point(155, 183);
+            label3.Location = new Point(181, 183);
             label3.Name = "label3";
             label3.Size = new Size(10, 15);
             label3.TabIndex = 0;
@@ -179,57 +178,89 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(171, 71);
+            textBox1.Location = new Point(197, 71);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(100, 23);
             textBox1.TabIndex = 2;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(171, 104);
+            textBox2.Location = new Point(197, 104);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(467, 23);
             textBox2.TabIndex = 2;
             // 
-            // textBox3
+            // _uploadKSMTeksBox
             // 
-            textBox3.Location = new Point(171, 141);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(164, 23);
-            textBox3.TabIndex = 2;
+            _uploadKSMTeksBox.Location = new Point(197, 141);
+            _uploadKSMTeksBox.Name = "_uploadKSMTeksBox";
+            _uploadKSMTeksBox.Size = new Size(164, 23);
+            _uploadKSMTeksBox.TabIndex = 2;
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(171, 180);
+            textBox4.Location = new Point(197, 180);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(164, 23);
             textBox4.TabIndex = 2;
             // 
-            // button1
+            // _submitButton
             // 
-            button1.Location = new Point(299, 234);
-            button1.Name = "button1";
-            button1.Size = new Size(139, 23);
-            button1.TabIndex = 3;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            _submitButton.Location = new Point(306, 274);
+            _submitButton.Name = "_submitButton";
+            _submitButton.Size = new Size(139, 23);
+            _submitButton.TabIndex = 3;
+            _submitButton.Text = "Submit";
+            _submitButton.UseVisualStyleBackColor = true;
+            _submitButton.Click += button1_Click;
             // 
-            // KTMBermasalahMenu
+            // label4
+            // 
+            label4.AutoEllipsis = true;
+            label4.AutoSize = true;
+            label4.Location = new Point(181, 223);
+            label4.Name = "label4";
+            label4.Size = new Size(10, 15);
+            label4.TabIndex = 0;
+            label4.Text = ":";
+            label4.UseWaitCursor = true;
+            // 
+            // label5
+            // 
+            label5.AutoEllipsis = true;
+            label5.AutoSize = true;
+            label5.Location = new Point(38, 223);
+            label5.Name = "label5";
+            label5.Size = new Size(137, 15);
+            label5.TabIndex = 0;
+            label5.Text = "Upload Surat Kehilangan";
+            label5.UseWaitCursor = true;
+            // 
+            // textBox5
+            // 
+            textBox5.Location = new Point(197, 220);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(164, 23);
+            textBox5.TabIndex = 2;
+            // 
+            // GantiKTMMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(706, 406);
-            Controls.Add(button1);
+            Controls.Add(_submitButton);
+            Controls.Add(textBox5);
             Controls.Add(textBox4);
-            Controls.Add(textBox3);
+            Controls.Add(_uploadKSMTeksBox);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             Controls.Add(_NIMValue);
             Controls.Add(_labelNIM);
+            Controls.Add(label5);
             Controls.Add(_ValueNameMahasiswa);
-            Controls.Add(_labelUploadKTM);
+            Controls.Add(_labelUploadSuratKehilangan);
             Controls.Add(_labelProgramStudi);
+            Controls.Add(label4);
             Controls.Add(_labelUploadKSM);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -237,7 +268,7 @@
             Controls.Add(_labelColon1);
             Controls.Add(_labelTahunAjar);
             Controls.Add(_labelNamaMahasiswa);
-            Name = "KTMBermasalahMenu";
+            Name = "GantiKTMMenu";
             Text = "KTMBermasalahMenu";
             ResumeLayout(false);
             PerformLayout();
@@ -252,15 +283,18 @@
         private Label _labelTahunAjar;
         private Label _labelProgramStudi;
         private Label _labelUploadKSM;
-        private Label _labelUploadKTM;
+        private Label _labelUploadSuratKehilangan;
         private Label _labelColon1;
         private Label label1;
         private Label label2;
         private Label label3;
         private TextBox textBox1;
         private TextBox textBox2;
-        private TextBox textBox3;
+        private TextBox _uploadKSMTeksBox;
         private TextBox textBox4;
-        private Button button1;
+        private Button _submitButton;
+        private Label label4;
+        private Label label5;
+        private TextBox textBox5;
     }
 }
