@@ -11,7 +11,8 @@ namespace OKTMserviceWindows
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Login());
+            // panggil GUI pertama yang akan ditampilkan, ganti Login() ==> [nama GUI]()
+            Application.Run(new GantiKTMMenu());
         }
     }
 }
