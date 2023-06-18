@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace OKTMserviceWindows
 {
-    public partial class GantiKTMMenu : DBServerAPI.Form
+    public partial class GantiKTMMenu : System.Windows.Forms.Form
     {
         public GantiKTMMenu()
         {
@@ -25,8 +25,8 @@ namespace OKTMserviceWindows
                     DBServerAPI.SERVICE_TYPE.PENGGANTIAN_KTM,
                     Client.mahasiswa,
                     _uploadKSMTeksBox.Text,
-                    _labelUploadSuratKehilangan.Text,
-                    _buktiPembayaran.Text
+                    textBox4.Text,
+                    textBox5.Text
                 );
             // mengupload ke server menggunakan API
             GantiKTMController.uploadRequestAsync( request );

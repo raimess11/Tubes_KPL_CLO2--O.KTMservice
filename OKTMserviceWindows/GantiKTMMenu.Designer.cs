@@ -295,6 +295,7 @@
             PerformLayout();
         }
 
+
         #endregion
 
         private Label _labelNamaMahasiswa;
