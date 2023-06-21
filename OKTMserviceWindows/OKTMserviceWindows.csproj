@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MenyantumkanDokumen\MenyantumkanDokumen.csproj" />
+
   </ItemGroup>
 
 </Project>
