@@ -1,3 +1,5 @@
+using O.KTMservice;
+
 namespace OKTMserviceWindows
 {
     internal static class Program
@@ -8,10 +10,12 @@ namespace OKTMserviceWindows
         [STAThread]
         static void Main()
         {
+            
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Login());
+            RequestPerbaikanKTMController controller = new RequestPerbaikanKTMController();
+            Application.Run(new RequestPerbaikanKTMView(controller));
         }
     }
 }
